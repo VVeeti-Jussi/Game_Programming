@@ -7,7 +7,9 @@ namespace AE3401
 { 
 public class hovering : MonoBehaviour
 {
-        public int speed;
+        public float speed = 6;
+        public float distancex = 4;
+        public float distancey = 5;
         
 }
 

@@ -10,10 +10,9 @@ public class hit : MonoBehaviour
 {
     [SerializeField] private string tagName = "Player";
     [SerializeField] private string tagName2 = "EditorOnly";
-        private string newTag;
     List<string> list = new List<string>();
     
-    void Start()
+    private void Start()
     {
      void OnTriggerEnter(Collider other)
         {
@@ -34,8 +33,7 @@ public class hit : MonoBehaviour
             foreach (string s in list)
                 {
                     Debug.Log(s);
-                    newTag = s;
-                    newTag = transform.gameObject.tag = "enemy";
+                    transform.gameObject.tag = "enemy";
                 }
         }
 

@@ -6,22 +6,14 @@ using UnityEngine.UIElements;
 namespace AE3401
 { 
 
-public class hit : MonoBehaviour
+public class Hit : Abstract
 {
-    [SerializeField] private string tagName = "Player";
-    [SerializeField] private string tagName2 = "EditorOnly";
+    //[SerializeField] private string tagName = "Player";
+    //[SerializeField] private string tagName2 = "EditorOnly";
     List<string> list = new List<string>();
     
-    private void Start()
+    public override void Find()
     {
-     void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "enemy")
-            {
-                transform.position = new Vector3(2, 2, 0);
-
-            }
-        }
         if (GameObject.FindGameObjectWithTag(tagName))
         {
             list.Add("player");
@@ -38,5 +30,13 @@ public class hit : MonoBehaviour
         }
 
     }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "enemy")
+            {
+                transform.position = new Vector3(2, 2, 0);
+
+            }
+        }
 }
 }

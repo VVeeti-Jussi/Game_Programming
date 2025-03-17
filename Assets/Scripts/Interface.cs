@@ -4,7 +4,11 @@ using UnityEngine;
 
 namespace AE3401
 {
-public class Interface : MonoBehaviour
+    public interface IAttack
+    {
+        void Attack();
+    }
+    public class Interface : MonoBehaviour
 {
     void Start()
     {

@@ -4,12 +4,8 @@ using UnityEngine;
 
 namespace AE3401
 { 
-public interface IAttack
-    {
-        void Attack();
-    }
 
-    public class FastAttack : IAttack
+    public class FastAttack : Interface, IAttack
     {
         public static FastAttack instance;
         public void Attack() 

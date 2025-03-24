@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AE3401
 { 
-public class hovering : MonoBehaviour
+public class Hovering : MonoBehaviour
 {
         public float speed = 6;
         public float distancex = 4;

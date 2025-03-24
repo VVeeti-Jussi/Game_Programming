@@ -5,14 +5,14 @@ using UnityEditor.Rendering;
 using UnityEngine;
 
 namespace AE3401 {
-    public class hoverController : MonoBehaviour
+    public class HoverController : MonoBehaviour
     {
         private float spd;
         private float disx;
         private float disy;
         void Start()
         {
-            hovering hovering1 = new hovering();
+            Hovering hovering1 = new Hovering();
             spd = hovering1.speed;
             disx = hovering1.distancex;
             disy = hovering1.distancey;

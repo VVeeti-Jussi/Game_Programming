@@ -14,5 +14,13 @@ namespace AE3401
         {
             enemy.EnemyType(walking);
         }
+
+        public class Walking : Enemy
+        {
+            public override void Type()
+            {
+                Debug.Log("walking");
+            }
+        }
     }
 }

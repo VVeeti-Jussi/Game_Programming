@@ -14,5 +14,13 @@ namespace AE3401
         {
             enemy.EnemyType(flying);
         }
+
+        public class Flying : Enemy
+        {
+            public override void Type()
+            {
+                Debug.Log("flying");
+            }
+        }
     }
 }
